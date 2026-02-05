@@ -4,12 +4,15 @@
 
 int main() {
     int n, pos, i;
+    printf("Enter the number of elements in the array: ");
     if (scanf("%d", &n) != 1) return 1;
 
     int arr[n];
     for (i = 0; i < n; i++) {
+        printf("Enter element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
+    printf("Enter the position to delete (1-based index): ");
     scanf("%d", &pos);
     if (pos < 1 || pos > n) {
     } else {

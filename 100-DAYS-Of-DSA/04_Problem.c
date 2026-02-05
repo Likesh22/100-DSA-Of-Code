@@ -4,11 +4,12 @@
 
 int main() {
     int n, i;
-
+    printf("Enter the number of elements in the array: ");
     if (scanf("%d", &n) != 1) return 0;
 
     int arr[n];
     for (i = 0; i < n; i++) {
+        printf("Enter element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
